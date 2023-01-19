@@ -14,7 +14,8 @@ Planning) software for use of general purpose.
 <li>Pre-commit automation: Husky</li>
 <li>Monitoring & Issue Tracking: Sentry</li>
 </ul>
-### Desing Patterns
+
+### Design Patterns
 
 <ul>
 <li>Provider Pattern</li>
