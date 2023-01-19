@@ -2,6 +2,7 @@
   "name": "uskon-erp",
   "version": "0.1.0",
   "private": true,
+  "author": "Firat Goktepe <firatgoktepe1986@gmail.com> (https://firatgoktepe.vercel.app//)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
