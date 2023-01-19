@@ -5,19 +5,22 @@ Planning) software for use of general purpose.
 
 ## Tech
 
--Front-end: Next.js, React, Typescript, Material UI
--State Management: Redux Toolkit
--Testing: Unit Tests(Jest) & E2E Tests (Cypress)
--CI/CD: GitHub Actions
--Linting: ESLint, Prettier
--Pre-commit automation: Husky
--Monitoring & Issue Tracking: Sentry
-
+<ul>
+<li>Front-end: Next.js, React, Typescript, Material UI</li>
+<li>State Management: Redux Toolkit</li>
+<li>Testing: Unit Tests(Jest) & E2E Tests (Cypress)</li>
+<li>CI/CD: GitHub Actions</li>
+<li>Linting: ESLint, Prettier</li>
+<li>Pre-commit automation: Husky</li>
+<li>Monitoring & Issue Tracking: Sentry</li>
+</ul>
 ### Desing Patterns
 
--Provider Pattern
--HOC Pattern
--Hooks Pattern
+<ul>
+<li>Provider Pattern</li>
+<li>HOC Pattern</li>
+<li>Hooks Pattern</li>
+</ul>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
