@@ -1,8 +1,32 @@
+import { useState } from 'react'
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
 import Example from '@/components/common/Example/Example'
+import { AppBar } from '@/layout/Sidebar/AppBar/AppBar'
+import { Drawer } from '@/layout/Sidebar/Drawer/Drawer'
+import { DrawerHeader } from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
+import Main from '@/layout/Main/Main'
+import Header from '@/layout/Header/Header'
+import SideLists from '@/layout/Sidebar/SideLists/SideLists'
+import { Theme, useTheme } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import CssBaseline from '@mui/material/CssBaseline'
+import Divider from '@mui/material/Divider'
+import IconButton from '@mui/material/IconButton'
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 
 export default function Home() {
+  const theme = useTheme<Theme>()
+  const [open, setOpen] = useState<boolean>(false)
+
+  const handleDrawerOpen = () => {
+    setOpen(true)
+  }
+
+  const handleDrawerClose = () => {
+    setOpen(false)
+  }
+
   return (
     <>
       <Head>
@@ -11,11 +35,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <Example />
-        </div>
-      </main>
+      <Example />
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar position="fixed" open={open}>
+          <Header handleDrawerOpen={handleDrawerOpen} open={open} />
+        </AppBar>
+        <Drawer variant="permanent" open={open}>
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === 'rtl' ? (
+                <ChevronRightIcon />
+              ) : (
+                <ChevronLeftIcon />
+              )}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <SideLists open={open} />
+        </Drawer>
+        <Main />
+      </Box>
     </>
   )
 }
