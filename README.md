@@ -12,7 +12,7 @@ Planning) software for use of general purpose.
 <li>CI/CD: GitHub Actions</li>
 <li>Linting: ESLint, Prettier</li>
 <li>Pre-commit automation: Husky</li>
-<li>Monitoring & Issue Tracking: Sentry</li>
+<li>Monitoring & Issue Tracking: sentry.io</li>
 </ul>
 
 ### Design Patterns
