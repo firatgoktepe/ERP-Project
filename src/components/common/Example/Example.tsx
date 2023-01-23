@@ -1,5 +1,7 @@
 import React from 'react'
 
-export default function Example(): JSX.Element {
+const Example: React.FC = () => {
   return <div>Example</div>
 }
+
+export default Example
