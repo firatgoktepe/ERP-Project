@@ -121,6 +121,13 @@ jobs:
       - name: Run test
         run: |
           yarn test
+        - run: echo hangs in the line above even though the env var is set
+      env:
+          CI: true
+      - run: CI=true yarn test
+      - run: echo works and pipeline continues
+      env:
+          CI: true  
   build:
     runs-on: ubuntu-latest
     strategy:
