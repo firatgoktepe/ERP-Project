@@ -10,7 +10,7 @@
     "db": "json-server --watch db.json --port 3001",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "jest --watchAll",
+    "test": "jest -all",
     "cypress": "cypress open"
   },
   "dependencies": {
