@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import Example from '@/components/common/Example/Example'
 import { AppBar } from '@/layout/Sidebar/AppBar/AppBar'
@@ -14,17 +13,24 @@ import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import { useAppDispatch, useAppSelector } from '../app/hooks'
+import {
+  open,
+  close,
+  selectexample,
+} from '../app/features/example/exampleSlice'
 
 export default function Home() {
   const theme = useTheme<Theme>()
-  const [open, setOpen] = useState<boolean>(false)
+  const dispatch = useAppDispatch()
+  const menu = useAppSelector(selectexample)
 
   const handleDrawerOpen = () => {
-    setOpen(true)
+    dispatch(open())
   }
 
   const handleDrawerClose = () => {
-    setOpen(false)
+    dispatch(close())
   }
 
   return (
@@ -38,10 +44,10 @@ export default function Home() {
       <Example />
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open}>
-          <Header handleDrawerOpen={handleDrawerOpen} open={open} />
+        <AppBar position="fixed" open={menu}>
+          <Header handleDrawerOpen={handleDrawerOpen} open={menu} />
         </AppBar>
-        <Drawer variant="permanent" open={open}>
+        <Drawer variant="permanent" open={menu}>
           <DrawerHeader>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === 'rtl' ? (
@@ -52,7 +58,7 @@ export default function Home() {
             </IconButton>
           </DrawerHeader>
           <Divider />
-          <SideLists open={open} />
+          <SideLists open={menu} />
         </Drawer>
         <Main />
       </Box>
