@@ -14,16 +14,12 @@ import IconButton from '@mui/material/IconButton'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
-import {
-  open,
-  close,
-  selectexample,
-} from '../app/features/example/exampleSlice'
+import { open, close, selectmenu } from '../app/features/menu/menuSlice'
 
 export default function Home() {
   const theme = useTheme<Theme>()
   const dispatch = useAppDispatch()
-  const menu = useAppSelector(selectexample)
+  const menu = useAppSelector(selectmenu)
 
   const handleDrawerOpen = () => {
     dispatch(open())
