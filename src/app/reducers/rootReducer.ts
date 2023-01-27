@@ -1,6 +1,6 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import exampleReducer from '../features/example/exampleSlice'
+import menuReducer from '../features/menu/menuSlice'
 
-const rootReducer = combineReducers({ example: exampleReducer })
+const rootReducer = combineReducers({ menu: menuReducer })
 
 export default rootReducer

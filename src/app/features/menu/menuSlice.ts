@@ -2,16 +2,16 @@ import { createSlice } from '@reduxjs/toolkit'
 import type { RootState } from '../../store/store'
 
 // declaring the types for our state
-export type exampleState = {
+export type menuState = {
   value: boolean
 }
 
-const initialState: exampleState = {
+const initialState: menuState = {
   value: false,
 }
 
-export const exampleSlice = createSlice({
-  name: 'example',
+export const menuSlice = createSlice({
+  name: 'menu',
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions.
   // In this example, 'open', 'close' are actions. They can be triggered from outside this slice, anywhere in the app.
@@ -26,10 +26,10 @@ export const exampleSlice = createSlice({
   },
 })
 // Here we are just exporting the actions from this slice, so that we can call them anywhere in our app.
-export const { open, close } = exampleSlice.actions
+export const { open, close } = menuSlice.actions
 
 // calling the above actions would be useless if we could not access the data in the state. So, we use something called a selector which allows us to select a value from the state.
-export const selectexample = (state: RootState) => state.example.value
+export const selectmenu = (state: RootState) => state.menu.value
 
 // exporting the reducer here, as we need to add this to the store
-export default exampleSlice.reducer
+export default menuSlice.reducer
