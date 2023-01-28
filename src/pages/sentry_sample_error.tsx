@@ -1,11 +1,17 @@
 import Head from 'next/head'
 
-const boxStyles = {
+interface boxStyles {
+  padding: string
+  border: string
+  borderRadius: string
+}
+
+const boxStyles: boxStyles = {
   padding: '12px',
   border: '1px solid #eaeaea',
   borderRadius: '10px',
 }
-export default function Home() {
+const Sample: React.FC = () => {
   return (
     <div>
       <Head>
@@ -63,3 +69,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Sample
