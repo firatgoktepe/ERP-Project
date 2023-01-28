@@ -57,6 +57,14 @@ export default function Home() {
           <SideLists open={menu} />
         </Drawer>
         <Main />
+        <button
+          type="button"
+          onClick={() => {
+            throw new Error('Sentry Frontend Error')
+          }}
+        >
+          Throw error
+        </button>
       </Box>
     </>
   )
