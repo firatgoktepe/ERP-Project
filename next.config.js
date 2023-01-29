@@ -9,10 +9,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
-
 module.exports = withSentryConfig(
-  module.exports,
+  nextConfig,
   { dryRun: process.env.VERCEL_ENV !== 'production' },
   { silent: true },
   { hideSourcemaps: true },
