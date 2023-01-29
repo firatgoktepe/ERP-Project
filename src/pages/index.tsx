@@ -56,14 +56,6 @@ export default function Home() {
           <Divider />
           <SideLists open={menu} />
         </Drawer>
-        <button
-          type="button"
-          onClick={() => {
-            throw new Error('Sentry Frontend Error on index.tsx')
-          }}
-        >
-          Throw error
-        </button>
         <Main />
       </Box>
     </>
