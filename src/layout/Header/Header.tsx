@@ -25,7 +25,7 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
         <MenuIcon />
       </IconButton>
       <Typography variant="h6" noWrap component="div">
-        ERP Example Project
+        ERP Project
       </Typography>
     </Toolbar>
   )
