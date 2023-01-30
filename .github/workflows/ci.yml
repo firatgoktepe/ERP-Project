@@ -153,7 +153,7 @@ jobs:
           name: build-output
           path: .next
           retention-days: 1
-    e2e-tests-chrome:
+  e2e-tests-chrome:
     runs-on: ubuntu-latest
     strategy:
       matrix:
