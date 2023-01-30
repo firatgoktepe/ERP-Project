@@ -1,7 +1,7 @@
 // Path: cypress/integration/appbar.cy.js
 // Test the Header component from layout/Sidebar/AppBar/AppBar.tsx
 
-import AppBar from '../../../src/layout/Sidebar/AppBar/AppBar.tsx'
+import AppBar from '../../../src/layout/Sidebar/AppBar/AppBar'
 
 describe('<AppBar />', () => {
   it('renders', () => {
