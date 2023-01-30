@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import { DrawerHeader } from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
+import DrawerHeader from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
 
 const Main: React.FC = () => {
   return (
