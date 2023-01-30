@@ -1,4 +1,6 @@
-// Path: cypress/integration/index.cy.js
+// Path: cypress/integration/header.cy.js
+// Test the Header component from layout/Header/Header.tsx
+
 import Header from '../../src/layout/Header/header.tsx'
 
 describe('<Header />', () => {

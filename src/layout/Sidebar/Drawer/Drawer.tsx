@@ -24,7 +24,7 @@ const closedMixin = (theme: Theme): CSSObject => ({
   },
 })
 
-export const Drawer = styled(MuiDrawer, {
+const Drawer = styled(MuiDrawer, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme, open }) => ({
   width: drawerWidth,
@@ -40,3 +40,5 @@ export const Drawer = styled(MuiDrawer, {
     '& .MuiDrawer-paper': closedMixin(theme),
   }),
 }))
+
+export default Drawer
