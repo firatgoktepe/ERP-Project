@@ -3,6 +3,7 @@ import Example from '@/components/common/Example/Example'
 import AppBar from '@/layout/Sidebar/AppBar/AppBar'
 import Drawer from '@/layout/Sidebar/Drawer/Drawer'
 import DrawerHeader from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
+import DrawerTitle from '@/layout/Sidebar/DrawerTitle/DrawerTitle'
 import Main from '@/layout/Main/Main'
 import Header from '@/layout/Header/Header'
 import SideLists from '@/layout/Sidebar/SideLists/SideLists'
@@ -15,6 +16,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { open, close, selectmenu } from '../app/features/menu/menuSlice'
+import Image from 'next/image'
 
 export default function Home() {
   const theme = useTheme<Theme>()
@@ -27,6 +29,16 @@ export default function Home() {
 
   const handleDrawerClose = () => {
     dispatch(close())
+  }
+
+  interface Images {
+    src: string
+    alt: string
+  }
+
+  const images: Images = {
+    src: '/../public/logo.png',
+    alt: 'Logo',
   }
 
   return (
@@ -45,6 +57,8 @@ export default function Home() {
         </AppBar>
         <Drawer variant="permanent" open={menu}>
           <DrawerHeader>
+            <Image src={images.src} width={50} height={50} alt={images.alt} />
+            <DrawerTitle />
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === 'rtl' ? (
                 <ChevronRightIcon />
