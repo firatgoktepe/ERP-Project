@@ -8,4 +8,12 @@ describe('<SideLists />', () => {
     // see: https://on.cypress.io/mounting-react
     cy.mount(<SideLists open={false} />)
   })
+  it('renders its children', () => {
+    cy.mount(
+      <ul>
+        <li data-testid="child" />
+      </ul>
+    )
+    cy.get('[data-testid="child"]').should('exist')
+  })
 })
