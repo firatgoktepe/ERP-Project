@@ -15,4 +15,12 @@ describe('<Header />', () => {
       />
     )
   })
+  it('renders its children', () => {
+    cy.mount(
+      <header>
+        <div data-testid="child" />
+      </header>
+    )
+    cy.get('[data-testid="child"]').should('exist')
+  })
 })
