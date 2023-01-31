@@ -17,6 +17,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { open, close, selectmenu } from '../app/features/menu/menuSlice'
 import Image from 'next/image'
+import profilePic from '../assets/logo.png'
 
 export default function Home() {
   const theme = useTheme<Theme>()
@@ -29,16 +30,6 @@ export default function Home() {
 
   const handleDrawerClose = () => {
     dispatch(close())
-  }
-
-  interface Images {
-    src: string
-    alt: string
-  }
-
-  const images: Images = {
-    src: '/../../public/logo.png',
-    alt: 'Logomuz',
   }
 
   return (
@@ -57,7 +48,7 @@ export default function Home() {
         </AppBar>
         <Drawer variant="permanent" open={menu}>
           <DrawerHeader>
-            <Image src={images.src} width={50} height={50} alt={images.alt} />
+            <Image src={profilePic} width={50} height={50} alt="Logo" />
             <DrawerTitle />
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === 'rtl' ? (
