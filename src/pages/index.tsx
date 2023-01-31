@@ -38,7 +38,7 @@ export default function Home() {
 
   const images: Images = {
     src: '/../public/logo.png',
-    alt: 'Logo',
+    alt: 'Logomuz',
   }
 
   return (
