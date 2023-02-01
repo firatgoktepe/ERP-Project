@@ -7,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import Search from '../../components/specific/Search/Search'
 import SearchIconWrapper from '../../components/specific/Search/SearchIconWrapper'
 import StyledInputBase from '../../components/specific/Search/StyledInputBase'
+import ProfileElements from '@/components/specific/ProfileElements/ProfileElements'
 
 interface openProps {
   open: boolean
@@ -14,6 +15,30 @@ interface openProps {
 }
 
 const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
+    React.useState<null | HTMLElement>(null)
+
+  const isMenuOpen = Boolean(anchorEl)
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
+
+  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget)
+  }
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null)
+  }
+
+  const handleMenuClose = () => {
+    setAnchorEl(null)
+    handleMobileMenuClose()
+  }
+
+  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+    setMobileMoreAnchorEl(event.currentTarget)
+  }
+
   return (
     <Toolbar>
       <IconButton
@@ -40,6 +65,16 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
           inputProps={{ 'aria-label': 'search' }}
         />
       </Search>
+      <ProfileElements
+        handleProfileMenuOpen={handleProfileMenuOpen}
+        handleMobileMenuClose={handleMobileMenuClose}
+        handleMenuClose={handleMenuClose}
+        handleMobileMenuOpen={handleMobileMenuOpen}
+        isMenuOpen={isMenuOpen}
+        isMobileMenuOpen={isMobileMenuOpen}
+        anchorEl={anchorEl}
+        mobileMoreAnchorEl={mobileMoreAnchorEl}
+      />
     </Toolbar>
   )
 }
