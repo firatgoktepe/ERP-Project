@@ -18,7 +18,7 @@ export const mobileProfileMenuSlice = createSlice({
   // So for example, if we make a dispatch to the 'open' action here from the index page, it will get triggered and change the value of the state from false to true.
   reducers: {
     openMobileProfile: (state) => {
-      state.value = event?.target as null | HTMLElement
+      state.value = event?.target as any
     },
     closeMobileProfile: (state) => {
       state.value = null
