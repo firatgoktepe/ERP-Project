@@ -7,6 +7,18 @@ import SearchIcon from '@mui/icons-material/Search'
 import Search from '../../components/specific/Search/Search'
 import SearchIconWrapper from '../../components/specific/Search/SearchIconWrapper'
 import StyledInputBase from '../../components/specific/Search/StyledInputBase'
+import ProfileElements from '@/components/specific/ProfileElements/ProfileElements'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
+import {
+  openProfile,
+  closeProfile,
+  selectprofileMenu,
+} from '../../app/features/profileElements/profileMenuSlice'
+import {
+  openMobileProfile,
+  closeMobileProfile,
+  selectmobileprofileMenu,
+} from '@/app/features/profileElements/mobileProfileMenuSlice'
 
 interface openProps {
   open: boolean
@@ -14,6 +26,30 @@ interface openProps {
 }
 
 const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
+  const dispatch = useAppDispatch()
+  const profileMenu = useAppSelector(selectprofileMenu)
+  const mobileProfileMenu = useAppSelector(selectmobileprofileMenu)
+
+  const isMenuOpen = Boolean(profileMenu)
+  const isMobileMenuOpen = Boolean(mobileProfileMenu)
+
+  const handleProfileMenuOpen = () => {
+    dispatch(openProfile())
+  }
+
+  const handleMobileMenuClose = () => {
+    dispatch(closeMobileProfile())
+  }
+
+  const handleMenuClose = () => {
+    dispatch(closeProfile())
+    handleMobileMenuClose()
+  }
+
+  const handleMobileMenuOpen = () => {
+    dispatch(openMobileProfile())
+  }
+
   return (
     <Toolbar>
       <IconButton
@@ -40,6 +76,16 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
           inputProps={{ 'aria-label': 'search' }}
         />
       </Search>
+      <ProfileElements
+        handleProfileMenuOpen={handleProfileMenuOpen}
+        handleMobileMenuClose={handleMobileMenuClose}
+        handleMenuClose={handleMenuClose}
+        handleMobileMenuOpen={handleMobileMenuOpen}
+        isMenuOpen={isMenuOpen}
+        isMobileMenuOpen={isMobileMenuOpen}
+        anchorEl={profileMenu}
+        mobileMoreAnchorEl={mobileProfileMenu}
+      />
     </Toolbar>
   )
 }
