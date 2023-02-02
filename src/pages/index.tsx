@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Example from '@/components/common/Example/Example'
 import AppBar from '@/layout/Sidebar/AppBar/AppBar'
 import Drawer from '@/layout/Sidebar/Drawer/Drawer'
 import DrawerHeader from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
@@ -40,7 +39,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Example />
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <AppBar position="fixed" open={menu}>
