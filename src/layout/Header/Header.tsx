@@ -8,6 +8,17 @@ import Search from '../../components/specific/Search/Search'
 import SearchIconWrapper from '../../components/specific/Search/SearchIconWrapper'
 import StyledInputBase from '../../components/specific/Search/StyledInputBase'
 import ProfileElements from '@/components/specific/ProfileElements/ProfileElements'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
+import {
+  openProfile,
+  closeProfile,
+  selectprofileMenu,
+} from '../../app/features/profileElements/profileMenuSlice'
+import {
+  openMobileProfile,
+  closeMobileProfile,
+  selectmobileprofileMenu,
+} from '@/app/features/profileElements/mobileProfileMenuSlice'
 
 interface openProps {
   open: boolean
@@ -15,28 +26,28 @@ interface openProps {
 }
 
 const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-    React.useState<null | HTMLElement>(null)
+  const dispatch = useAppDispatch()
+  const profileMenu = useAppSelector(selectprofileMenu)
+  const mobileProfileMenu = useAppSelector(selectmobileprofileMenu)
 
-  const isMenuOpen = Boolean(anchorEl)
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
+  const isMenuOpen = Boolean(profileMenu)
+  const isMobileMenuOpen = Boolean(mobileProfileMenu)
 
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget)
+  const handleProfileMenuOpen = () => {
+    dispatch(openProfile())
   }
 
   const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null)
+    dispatch(closeMobileProfile())
   }
 
   const handleMenuClose = () => {
-    setAnchorEl(null)
+    dispatch(closeProfile())
     handleMobileMenuClose()
   }
 
-  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setMobileMoreAnchorEl(event.currentTarget)
+  const handleMobileMenuOpen = () => {
+    dispatch(openMobileProfile())
   }
 
   return (
@@ -72,8 +83,8 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
         handleMobileMenuOpen={handleMobileMenuOpen}
         isMenuOpen={isMenuOpen}
         isMobileMenuOpen={isMobileMenuOpen}
-        anchorEl={anchorEl}
-        mobileMoreAnchorEl={mobileMoreAnchorEl}
+        anchorEl={profileMenu}
+        mobileMoreAnchorEl={mobileProfileMenu}
       />
     </Toolbar>
   )
