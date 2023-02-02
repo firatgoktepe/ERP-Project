@@ -34,7 +34,7 @@ const ProfileElements: React.FC<ProfileElementsProps> = ({
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{
-        vertical: 'bottom',
+        vertical: 60,
         horizontal: 'right',
       }}
       id={menuId}
@@ -56,7 +56,7 @@ const ProfileElements: React.FC<ProfileElementsProps> = ({
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: 'bottom',
+        vertical: 40,
         horizontal: 'right',
       }}
       id={mobileMenuId}
