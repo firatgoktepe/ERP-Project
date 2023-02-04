@@ -3,6 +3,7 @@ import AppBar from '@/layout/Sidebar/AppBar/AppBar'
 import Drawer from '@/layout/Sidebar/Drawer/Drawer'
 import DrawerHeader from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
 import DrawerTitle from '@/layout/Sidebar/DrawerTitle/DrawerTitle'
+import DrawerLogo from '@/layout/Sidebar/DrawerLogo/DrawerLogo'
 import Main from '@/layout/Main/Main'
 import Header from '@/layout/Header/Header'
 import SideLists from '@/layout/Sidebar/SideLists/SideLists'
@@ -15,8 +16,6 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { open, close, selectmenu } from '../app/features/menu/menuSlice'
-import Image from 'next/image'
-import profilePic from '../assets/logo.png'
 
 export default function Home() {
   const theme = useTheme<Theme>()
@@ -46,7 +45,7 @@ export default function Home() {
         </AppBar>
         <Drawer variant="permanent" open={menu}>
           <DrawerHeader>
-            <Image src={profilePic} width={50} height={50} alt="Logo" />
+            <DrawerLogo />
             <DrawerTitle />
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === 'rtl' ? (
