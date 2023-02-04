@@ -17,7 +17,12 @@ const SideLists: React.FC<openProps> = ({ open }) => {
     <>
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          <ListItem
+            key={text}
+            disablePadding
+            sx={{ display: 'block' }}
+            data-testid="list-item-one"
+          >
             <ListItemButton
               sx={{
                 minHeight: 48,
@@ -42,7 +47,12 @@ const SideLists: React.FC<openProps> = ({ open }) => {
       <Divider />
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          <ListItem
+            key={text}
+            disablePadding
+            sx={{ display: 'block' }}
+            data-testid="list-item-two"
+          >
             <ListItemButton
               sx={{
                 minHeight: 48,
