@@ -23,7 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/common/Example/Example.test.js"
+    "src/components/common/Example/Example.test.js",
+    "src/hooks/useFetch.test.js"
   ],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"]
 }
