@@ -1,7 +1,7 @@
-// Path: cypress/integration/main.cy.js
+// Path: cypress/integration/Main/main.cy.js
 // Test the Main component from layout/Main/Main.tsx
 
-import Main from '../../src/layout/Main/Main'
+import Main from '../../../src/layout/Main/Main'
 
 describe('<Main />', () => {
   it('renders', () => {
