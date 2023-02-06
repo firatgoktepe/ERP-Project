@@ -6,6 +6,7 @@ import DrawerTitle from '@/layout/Sidebar/DrawerTitle/DrawerTitle'
 import DrawerLogo from '@/layout/Sidebar/DrawerLogo/DrawerLogo'
 import Main from '@/layout/Main/Main'
 import Header from '@/layout/Header/Header'
+import Footer from '@/layout/Footer/Footer'
 import SideLists from '@/layout/Sidebar/SideLists/SideLists'
 import { Theme, useTheme } from '@mui/material/styles'
 import Box from '@mui/material/Box'
@@ -38,7 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box sx={{ display: 'flex' }}>
+      <Box>
         <CssBaseline />
         <AppBar position="fixed" open={menu}>
           <Header handleDrawerOpen={handleDrawerOpen} open={menu} />
@@ -59,6 +60,7 @@ export default function Home() {
           <SideLists open={menu} />
         </Drawer>
         <Main />
+        <Footer />
       </Box>
     </>
   )
