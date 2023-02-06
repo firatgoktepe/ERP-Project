@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography, Link } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 
 export const Footer: React.FC = (): ReactElement => {
@@ -22,7 +22,15 @@ export const Footer: React.FC = (): ReactElement => {
       <Container maxWidth="lg">
         <Grid container direction="column" alignItems="center">
           <Grid item xs={12}>
-            <Typography variant="h5">Libre Consulting</Typography>
+            Created with &#10084; by{' '}
+            <Link
+              href="https://libreconsulting.org/"
+              target="_blank"
+              color="inherit"
+              underline="hover"
+            >
+              Libre Consulting
+            </Link>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="subtitle1">
