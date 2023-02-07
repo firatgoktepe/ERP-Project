@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import ErrorComponent from '@/components/common/Error/Error'
 import Spinner from '@/components/common/Spinner/Spinner'
 
-const url = `http://jsonplaceholder.typicode.com/posts`
+const url = `https://jsonplaceholder.typicode.com/posts`
 
 interface Post {
   userId: number
