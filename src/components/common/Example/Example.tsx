@@ -19,7 +19,7 @@ const Example: React.FC = () => {
   if (error) return <ErrorComponent message="Page is not found" />
   if (!data) return <Spinner open />
   return (
-    <Typography variant="h3" sx={{ margin: '0 auto', width: '50%' }}>
+    <Typography variant="h4" sx={{ margin: '0 auto', width: '50%' }}>
       {data[0].title}
     </Typography>
   )
