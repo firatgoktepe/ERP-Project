@@ -1,9 +1,7 @@
 import React, { ReactElement } from 'react'
 import { Box, Container, Grid, Typography, Link } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
 
 export const Footer: React.FC = (): ReactElement => {
-  const theme = useTheme()
   return (
     <Box
       sx={{
@@ -13,10 +11,6 @@ export const Footer: React.FC = (): ReactElement => {
         paddingTop: '1rem',
         paddingBottom: '1rem',
         color: 'white',
-        [theme.breakpoints.up('md')]: {
-          position: 'absolute',
-        },
-        bottom: 0,
       }}
     >
       <Container maxWidth="lg">

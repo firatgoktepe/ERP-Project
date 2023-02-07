@@ -2,11 +2,16 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import DrawerHeader from '@/layout/Sidebar/DrawerHeader/DrawerHeader'
+import Example from '@/components/common/Example/Example'
 
 const Main: React.FC = () => {
   return (
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
       <DrawerHeader />
+
+      <Typography variant="h3" sx={{ margin: '0 auto', width: '50%' }}>
+        First Heading
+      </Typography>
       <Typography paragraph sx={{ margin: '0 auto', width: '50%' }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus
@@ -20,6 +25,9 @@ const Main: React.FC = () => {
         tincidunt lobortis feugiat vivamus at augue. At augue eget arcu dictum
         varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt.
         Lorem donec massa sapien faucibus et molestie ac.
+      </Typography>
+      <Typography variant="h3" sx={{ margin: '0 auto', width: '50%' }}>
+        Second Heading
       </Typography>
       <Typography paragraph sx={{ margin: '0 auto', width: '50%' }}>
         Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
@@ -35,6 +43,7 @@ const Main: React.FC = () => {
         maecenas accumsan lacus vel facilisis. Nulla posuere sollicitudin
         aliquam ultrices sagittis orci a.
       </Typography>
+      <Example />
     </Box>
   )
 }
