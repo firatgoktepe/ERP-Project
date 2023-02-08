@@ -2,7 +2,16 @@
   "name": "uskon-erp",
   "version": "0.1.0",
   "private": true,
+  "license": "Apache-2.0",
   "author": "Firat Goktepe <firatgoktepe1986@gmail.com> (https://firatgoktepe.vercel.app//)",
+  "homepage": "https://github.com/firatgoktepe/ERP-Project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firatgoktepe/ERP-Project"
+  },
+  "bugs": {
+    "url": "https://github.com/firatgoktepe/ERP-Project/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
