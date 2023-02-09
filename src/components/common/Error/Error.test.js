@@ -2,16 +2,16 @@
 // Test for the Error component
 
 import React from 'react'
-import Error from './Error'
+import ErrorComponent from './Error'
 import { render } from '@testing-library/react'
 
-describe('Error', () => {
+describe('ErrorComponent', () => {
   it('renders without crashing', () => {
-    render(<Error />)
+    render(<ErrorComponent />)
   })
 
   it('renders the error message', () => {
-    const { getByText } = render(<Error message="Error message" />)
+    const { getByText } = render(<ErrorComponent message="Error message" />)
     expect(getByText('Error message')).toBeInTheDocument()
   })
 })
