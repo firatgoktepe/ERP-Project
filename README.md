@@ -19,7 +19,7 @@ Planning) software for use of general purpose.
 
 Fake API created with <a 
 href="https://my-json-server.typicode.com/">JSON-server</a> ---->
-https://my-json-server.typicode.com/firatgoktepe/ERP-Project/posts
+https://my-json-server.typicode.com/firatgoktepe/ERP-Project/db
 
 ### Design Patterns
 
