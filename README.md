@@ -8,7 +8,8 @@ Planning) software for use of general purpose.
 <ul>
 <li>Front-end: Next.js, React, Typescript, Material UI</li>
 <li>State Management: Redux Toolkit</li>
-<li>Testing: Unit Tests(Jest), Integration & E2E Tests (Cypress)</li>
+<li>Testing: Unit Tests(Jest & Testing-Library), Integration & E2E Tests 
+(Cypress)</li>
 <li>CI/CD: GitHub Actions</li>
 <li>Linting: ESLint, Prettier</li>
 <li>Pre-commit automation: Husky</li>
