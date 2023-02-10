@@ -15,6 +15,12 @@ Planning) software for use of general purpose.
 <li>Monitoring & Issue Tracking: sentry.io</li>
 </ul>
 
+## Fake API
+
+Fake API created with <a 
+href="https://my-json-server.typicode.com/">JSON-server</a> ---->
+https://my-json-server.typicode.com/firatgoktepe/ERP-Project/posts
+
 ### Design Patterns
 
 <ul>
