@@ -15,8 +15,8 @@ import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import { useAppDispatch, useAppSelector } from '../app/hooks'
-import { open, close, selectmenu } from '../app/features/menu/menuSlice'
+import { useAppDispatch, useAppSelector } from '../redux/hooks'
+import { open, close, selectmenu } from '../redux/features/menu/menuSlice'
 
 export default function Home() {
   const theme = useTheme<Theme>()

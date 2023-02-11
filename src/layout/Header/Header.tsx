@@ -8,17 +8,17 @@ import Search from '../../components/specific/Search/Search'
 import SearchIconWrapper from '../../components/specific/Search/SearchIconWrapper'
 import StyledInputBase from '../../components/specific/Search/StyledInputBase'
 import ProfileElements from '@/components/specific/ProfileElements/ProfileElements'
-import { useAppDispatch, useAppSelector } from '../../app/hooks'
+import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import {
   openProfile,
   closeProfile,
   selectprofileMenu,
-} from '../../app/features/profileElements/profileMenuSlice'
+} from '../../redux/features/profileElements/profileMenuSlice'
 import {
   openMobileProfile,
   closeMobileProfile,
   selectmobileprofileMenu,
-} from '@/app/features/profileElements/mobileProfileMenuSlice'
+} from '@/redux/features/profileElements/mobileProfileMenuSlice'
 
 interface openProps {
   open: boolean
