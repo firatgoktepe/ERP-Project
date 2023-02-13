@@ -13,7 +13,7 @@ module.exports = withSentryConfig(
   nextConfig,
   { dryRun: process.env.VERCEL_ENV !== 'production' },
   { silent: true },
-  { hideSourcemaps: true },
+  { hideSourceMaps: true },
   { disableServerWebpackPlugin: true },
   { disableClientWebpackPlugin: true }
 )
