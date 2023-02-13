@@ -6,7 +6,7 @@ import Box from '@mui/material/Box'
 export default function MaterialManagement(): JSX.Element {
   return (
     <>
-      <CustomHead title="Twitter" />
+      <CustomHead title="Malzeme Yönetimi" />
       <Box>
         <Layout />
         <div>Twitter</div>
