@@ -1,10 +1,10 @@
 import CustomHead from '@/components/common/Head/Head'
 import ProjectManagement from './project_management'
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <>
-      <CustomHead title="Home" />
+      <CustomHead title="Dashboard" />
       <ProjectManagement />
     </>
   )

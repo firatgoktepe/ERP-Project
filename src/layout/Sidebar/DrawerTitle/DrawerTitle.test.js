@@ -11,10 +11,10 @@ describe('Drawer Title', () => {
     expect(container).toBeTruthy()
   })
 
-  // Drawer Title renders correctly with a title of "Libre Consulting"
-  it('renders correctly with a title of "Libre Consulting"', () => {
+  // Drawer Title renders correctly with a title of "Libre Gaudium"
+  it('renders correctly with a title of "Libre Gaudium"', () => {
     const { container } = render(<DrawerTitle />)
     expect(container).toBeTruthy()
-    expect(container.textContent).toBe('Libre Consulting')
+    expect(container.textContent).toBe('Libre Gaudium')
   })
 })
