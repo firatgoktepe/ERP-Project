@@ -1,4 +1,5 @@
 import React from 'react'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
@@ -32,6 +33,7 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
 
   const isMenuOpen = Boolean(profileMenu)
   const isMobileMenuOpen = Boolean(mobileProfileMenu)
+  const matches = useMediaQuery('(max-width:600px)')
 
   const handleProfileMenuOpen = () => {
     dispatch(openProfile())
@@ -65,7 +67,7 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
         <MenuIcon />
       </IconButton>
       <Typography variant="h6" noWrap component="div">
-        ERP Project
+        {matches ? '' : 'LibreGaudium' && open ? '' : 'LibreGaudium'}
       </Typography>
       <Search>
         <SearchIconWrapper>
