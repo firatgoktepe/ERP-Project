@@ -67,7 +67,7 @@ const Header: React.FC<openProps> = ({ open, handleDrawerOpen }) => {
         <MenuIcon />
       </IconButton>
       <Typography variant="h6" noWrap component="div">
-        {matches ? '' : 'LibreGaudium' && open ? '' : 'LibreGaudium'}
+        {matches ? '' : 'Libre Gaudium' && open ? '' : 'Libre Gaudium'}
       </Typography>
       <Search>
         <SearchIconWrapper>
