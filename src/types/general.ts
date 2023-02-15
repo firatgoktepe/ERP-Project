@@ -6,3 +6,9 @@ export interface IMenuItem {
   Icon: OverridableComponent<SvgIconTypeMap>
   route: string
 }
+
+export interface IModuleItem {
+  name: string
+  route: string
+  image: any
+}

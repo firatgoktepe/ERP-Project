@@ -1,11 +1,11 @@
 import CustomHead from '@/components/common/Head/Head'
-import ProjectManagement from './project_management'
+import Dashboard from './dashboard'
 
 export default function Home(): JSX.Element {
   return (
     <>
       <CustomHead title="Dashboard" />
-      <ProjectManagement />
+      <Dashboard />
     </>
   )
 }
