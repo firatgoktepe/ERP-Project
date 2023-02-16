@@ -7,13 +7,13 @@ Planning) software for use of general purpose.
 
 <ul>
 <li>Front-end: <a href="https://nextjs.org/">Next.js</a>, <a href="https://reactjs.org/">React</a>, <a href="https://www.typescriptlang.org/">Typescript</a>, <a href="https://mui.com/">Material UI</a></li>
-<li>State Management: <a href="https://nextjs.org/">Redux Toolkit</a></li>
-<li>Testing: Unit Tests(<a href="https://nextjs.org/">Jest</a> & <a href="https://nextjs.org/">Testing-Library</a>), Integration & E2E Tests 
-(<a href="https://nextjs.org/">Cypress</a>)</li>
+<li>State Management: <a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
+<li>Testing: Unit Tests(<a href="https://jestjs.io/">Jest</a> & <a href="https://testing-library.com/">Testing-Library</a>), Integration & E2E Tests 
+(<a href="https://www.cypress.io/">Cypress</a>)</li>
 <li>CI/CD: GitHub Actions</li>
-<li>Linting: <a href="https://nextjs.org/">ESLint</a>, <a href="https://nextjs.org/">Prettier</a></li>
-<li>Pre-commit automation: <a href="https://nextjs.org/">Husky</a></li>
-<li>Monitoring & Issue Tracking: <a href="https://nextjs.org/">sentry.io</a></li>
+<li>Linting: <a href="https://eslint.org/">ESLint</a>, <a href="https://prettier.io/">Prettier</a></li>
+<li>Pre-commit automation: <a href="https://typicode.github.io/husky/#/">Husky</a></li>
+<li>Monitoring & Issue Tracking: <a href="https://sentry.io/">sentry.io</a></li>
 </ul>
 
 ## Fake API
