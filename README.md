@@ -6,14 +6,14 @@ Planning) software for use of general purpose.
 ## Tech
 
 <ul>
-<li>Front-end: Next.js, React, Typescript, Material UI</li>
-<li>State Management: Redux Toolkit</li>
-<li>Testing: Unit Tests(Jest & Testing-Library), Integration & E2E Tests 
-(Cypress)</li>
+<li>Front-end: <a href="https://nextjs.org/">Next.js</a>, <a href="https://reactjs.org/">React</a>, <a href="https://www.typescriptlang.org/">Typescript</a>, <a href="https://mui.com/">Material UI</a></li>
+<li>State Management: <a href="https://nextjs.org/">Redux Toolkit</a></li>
+<li>Testing: Unit Tests(<a href="https://nextjs.org/">Jest</a> & <a href="https://nextjs.org/">Testing-Library</a>), Integration & E2E Tests 
+(<a href="https://nextjs.org/">Cypress</a>)</li>
 <li>CI/CD: GitHub Actions</li>
-<li>Linting: ESLint, Prettier</li>
-<li>Pre-commit automation: Husky</li>
-<li>Monitoring & Issue Tracking: sentry.io</li>
+<li>Linting: <a href="https://nextjs.org/">ESLint</a>, <a href="https://nextjs.org/">Prettier</a></li>
+<li>Pre-commit automation: <a href="https://nextjs.org/">Husky</a></li>
+<li>Monitoring & Issue Tracking: <a href="https://nextjs.org/">sentry.io</a></li>
 </ul>
 
 ## Fake API
