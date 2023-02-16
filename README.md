@@ -22,7 +22,7 @@ Fake API created with <a
 href="https://my-json-server.typicode.com/">JSON-server</a> ---->
 https://my-json-server.typicode.com/firatgoktepe/ERP-Project/db
 
-### Design Patterns
+## Design Patterns
 
 <ul>
 <li>Provider Pattern</li>
@@ -30,7 +30,7 @@ https://my-json-server.typicode.com/firatgoktepe/ERP-Project/db
 <li>Hooks Pattern</li>
 </ul>
 
-### Live Demo
+## Live Demo
 
 https://erp-example-project.vercel.app/
 
