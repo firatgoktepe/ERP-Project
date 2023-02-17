@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles'
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
 import MoodBadIcon from '@mui/icons-material/MoodBad'
 
 const Error = styled(Typography)(({ theme }) => ({
