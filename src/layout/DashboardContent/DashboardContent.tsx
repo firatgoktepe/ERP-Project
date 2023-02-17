@@ -34,13 +34,13 @@ const DashboardContent: React.FC = (): JSX.Element => {
       </Box>
       <Box
         sx={{
-          width: '100%',
-          height: 500,
+          maxWidth: '80%',
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gridTemplateRows: 'repeat(2, 1fr)',
-          gap: 1,
+          gap: 3,
           marginTop: 10,
+          marginBottom: 10,
+          marginLeft: 25,
         }}
       >
         {MODULE_LIST_ITEMS.map(({ route, image, name }, id) => (
