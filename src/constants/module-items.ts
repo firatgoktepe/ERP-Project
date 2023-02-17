@@ -1,4 +1,3 @@
-import materialPic from '@/assets/material.png'
 import planPic from '@/assets/plan.png'
 import projectPic from '@/assets/proje_yon.png'
 import productPic from '@/assets/uretim_yon.png'
@@ -25,7 +24,7 @@ export const MODULE_LIST_ITEMS: IModuleItem[] = [
   },
   {
     name: 'Malzeme Yönetimi Modülü',
-    image: materialPic,
+    image: productPic,
     route: ROUTES.MATERIAL_MANAGEMENT,
   },
   {
