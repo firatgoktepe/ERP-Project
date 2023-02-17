@@ -17,11 +17,13 @@ const ActionAreaCard: React.FC<IModuleItem> = ({
       sx={{
         textAlign: 'center',
         borderRadius: '10px',
-        backgroundColor: 'gray.light',
+        backgroundColor: '	#d6d6db',
         '&:hover': {
           backgroundColor: 'gray.light',
           opacity: [0.9, 0.8, 0.7],
         },
+        width: '100%',
+        height: '50vh',
       }}
     >
       <CardActionArea>
@@ -33,7 +35,14 @@ const ActionAreaCard: React.FC<IModuleItem> = ({
             fontSize: 30,
           }}
         >
-          <Image src={image} width={100} height={100} alt="Materials" />
+          <Image
+            src={image}
+            width={100}
+            height={100}
+            sizes="100vw"
+            style={{ width: '100%', height: 'fit-content' }}
+            alt="Modüller"
+          />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
               {name}
