@@ -2,6 +2,7 @@ import CustomHead from '@/components/common/Head/Head'
 import Layout from '@/layout/Layout/Layout'
 import Footer from '@/layout/Footer/Footer'
 import Box from '@mui/material/Box'
+import Main from '@/layout/Main/Main'
 
 export default function MaterialManagement(): JSX.Element {
   return (
@@ -9,7 +10,7 @@ export default function MaterialManagement(): JSX.Element {
       <CustomHead title="Malzeme Yönetimi" />
       <Box>
         <Layout />
-        <div>Twitter</div>
+        <Main />
         <Footer />
       </Box>
     </>
