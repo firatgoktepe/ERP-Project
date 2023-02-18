@@ -10,6 +10,8 @@ const openedMixin = (theme: Theme): CSSObject => ({
     duration: theme.transitions.duration.enteringScreen,
   }),
   overflowX: 'hidden',
+  backgroundColor: '#1976d2',
+  color: '#fff',
 })
 
 const closedMixin = (theme: Theme): CSSObject => ({

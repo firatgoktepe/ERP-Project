@@ -22,8 +22,8 @@ const ActionAreaCard: React.FC<IModuleItem> = ({
           backgroundColor: 'gray.light',
           opacity: [0.9, 0.8, 0.7],
         },
-        width: '100%',
-        height: '50vh',
+        width: '80%',
+        height: 'auto',
       }}
     >
       <CardActionArea>
@@ -44,7 +44,18 @@ const ActionAreaCard: React.FC<IModuleItem> = ({
             alt="Modüller"
           />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography
+              sx={{
+                borderRadius: 5,
+                border: '10px',
+                backgroundColor: '#1976d2',
+                color: 'white',
+                padding: '10px',
+              }}
+              gutterBottom
+              variant="h6"
+              component="div"
+            >
               {name}
             </Typography>
           </CardContent>

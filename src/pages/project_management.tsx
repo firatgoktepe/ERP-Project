@@ -1,6 +1,5 @@
 import CustomHead from '@/components/common/Head/Head'
 import Layout from '@/layout/Layout/Layout'
-import Main from '@/layout/Main/Main'
 import Footer from '@/layout/Footer/Footer'
 import Box from '@mui/material/Box'
 
@@ -10,7 +9,7 @@ export default function ProjectManagement(): JSX.Element {
       <CustomHead title="Proje Yönetimi" />
       <Box>
         <Layout />
-        <Main />
+        <div>Projects</div>
         <Footer />
       </Box>
     </>

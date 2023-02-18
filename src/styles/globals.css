@@ -105,3 +105,15 @@ a {
     color-scheme: dark;
   }
 } */
+
+body {
+  background-color: lightgray;
+}
+
+.logoImage {
+  border-radius: 50%;
+}
+
+.drawerTitle {
+  margin-left: 10px;
+}

@@ -55,6 +55,7 @@ const SideLists: React.FC<openProps> = ({ open }) => {
                     minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
+                    color: open ? '#fff' : '#000',
                   }}
                 >
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -71,7 +72,13 @@ const SideLists: React.FC<openProps> = ({ open }) => {
       {open && (
         <Typography
           variant="h6"
-          sx={{ px: 2.5, py: 1, opacity: 0.6, fontStyle: 'italic' }}
+          sx={{
+            px: 2.5,
+            py: 1,
+            opacity: 0.6,
+            fontStyle: 'italic',
+            color: '#fff',
+          }}
         >
           MODÜLLER
         </Typography>
@@ -139,7 +146,7 @@ const SideLists: React.FC<openProps> = ({ open }) => {
           <ListItem
             key={text}
             disablePadding
-            sx={{ display: 'block' }}
+            sx={{ display: 'block', color: '#fff' }}
             data-testid="list-item-two"
           >
             <ListItemButton
@@ -154,6 +161,7 @@ const SideLists: React.FC<openProps> = ({ open }) => {
                   minWidth: 0,
                   mr: open ? 3 : 'auto',
                   justifyContent: 'center',
+                  color: open ? '#fff' : '#000',
                 }}
               >
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
