@@ -11,6 +11,18 @@ export default function App({ Component, pageProps }: AppProps) {
           .logoImage {
             border-radius: 50%;
           }
+          body {
+            background-color: lightgray;
+          }
+          .drawerTitle {
+            margin-left: 10px;
+          }
+          .primaryButton {
+            margin-top: 5rem;
+            margin-left: 6rem;
+            width: 15%;
+            text-align: center;
+          }
         `}
       />
       <Component {...pageProps} />
