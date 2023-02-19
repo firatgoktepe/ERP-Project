@@ -27,8 +27,11 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <Global
         styles={css`
-          body {
-            background-color: lightgray;
+          .primaryButton {
+            margin-top: 5rem;
+            margin-left: 6rem;
+            width: 15%;
+            text-align: center;
           }
         `}
       />
