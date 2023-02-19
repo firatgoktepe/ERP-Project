@@ -7,6 +7,18 @@ const { withSentryConfig } = require('@sentry/nextjs')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  webpack: (config) => {
+    // Filter out default Next.js CSS rules:
+    config.module.rules = config.module.rules.filter((r) => !r.oneOf)
+
+    // Add your own rules
+
+    config.module.rules.push({
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+    })
+    return config
+  },
 }
 
 module.exports = withSentryConfig(
