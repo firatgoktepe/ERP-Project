@@ -25,6 +25,13 @@ export default function App({ Component, pageProps }: AppProps) {
           }
         `}
       />
+      <Global
+        styles={css`
+          body {
+            background-color: lightgray;
+          }
+        `}
+      />
       <Component {...pageProps} />
     </Provider>
   )
