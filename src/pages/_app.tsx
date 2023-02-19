@@ -17,12 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
           .drawerTitle {
             margin-left: 10px;
           }
-          .primaryButton {
-            margin-top: 5rem;
-            margin-left: 6rem;
-            width: 15%;
-            text-align: center;
-          }
         `}
       />
       <Global
