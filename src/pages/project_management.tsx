@@ -2,6 +2,7 @@ import CustomHead from '@/components/common/Head/Head'
 import Layout from '@/layout/Layout/Layout'
 import Footer from '@/layout/Footer/Footer'
 import Box from '@mui/material/Box'
+import ProjectsTable from '@/components/specific/Table/ProjectsTable'
 
 export default function ProjectManagement(): JSX.Element {
   return (
@@ -9,7 +10,7 @@ export default function ProjectManagement(): JSX.Element {
       <CustomHead title="Proje Yönetimi" />
       <Box>
         <Layout />
-        <div>Projects</div>
+        <ProjectsTable />
         <Footer />
       </Box>
     </>

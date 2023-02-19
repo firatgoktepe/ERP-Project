@@ -1,11 +1,11 @@
 import * as React from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IModuleItem } from '@/types/general'
+import PrimaryButton from '../Button/PrimaryButton'
 
 const ActionAreaCard: React.FC<IModuleItem> = ({
   route,
@@ -44,20 +44,7 @@ const ActionAreaCard: React.FC<IModuleItem> = ({
             alt="Modüller"
           />
           <CardContent>
-            <Typography
-              sx={{
-                borderRadius: 5,
-                border: '10px',
-                backgroundColor: '#1976d2',
-                color: 'white',
-                padding: '10px',
-              }}
-              gutterBottom
-              variant="h6"
-              component="div"
-            >
-              {name}
-            </Typography>
+            <PrimaryButton title={name} />
           </CardContent>
         </Link>
       </CardActionArea>
