@@ -1,7 +1,8 @@
 import React from 'react'
+import Typography from '@mui/material/Typography'
 
 const DrawerTitle: React.FC = () => {
-  return <h3 className="drawerTitle">Libre Gaudium</h3>
+  return <Typography className="drawerTitle">Libre Gaudium</Typography>
 }
 
 export default DrawerTitle
