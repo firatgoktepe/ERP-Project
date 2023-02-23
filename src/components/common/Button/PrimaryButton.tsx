@@ -23,7 +23,7 @@ const PrimaryButton: React.FC<IPrimaryButton> = ({
         padding: '10px',
         marginTop: className && '5rem',
         marginLeft: className && '6rem',
-        width: className && matches ? '15%' : className ? '20%' : '100%',
+        width: className && matches ? '30%' : className ? '20%' : '100%',
         textAlign: className && 'center',
       }}
       gutterBottom
