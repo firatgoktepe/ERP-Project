@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import { Box, Container, Grid, Typography, Link } from '@mui/material'
 
-export const Footer: React.FC = (): ReactElement => {
+const Footer: React.FC = () => {
   return (
     <Box
       sx={{
