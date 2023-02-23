@@ -20,7 +20,9 @@
     "lint": "next lint",
     "prepare": "husky install",
     "test": "jest -all",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cypress:cache": "cypress cache clear",
+    "cypress:install": "cypress install"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
