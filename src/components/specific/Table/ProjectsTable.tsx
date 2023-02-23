@@ -99,7 +99,7 @@ export default function ProjectsTable() {
 
   return (
     <>
-      <PrimaryButton title="Yeni Proje Girişi" className="primaryButton" />
+      <PrimaryButton title="Yeni Proje" className="primaryButton" />
       <Paper
         sx={{
           width: matches ? '70%' : '90%',
